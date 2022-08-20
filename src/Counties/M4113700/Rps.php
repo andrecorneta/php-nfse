@@ -444,7 +444,7 @@ class Rps extends RpsSIGISS
         if (!Validator::numeric()->floatVal()->min(0)->validate($value)) {
             throw new \InvalidArgumentException($msg);
         }
-        $this->infPis = round($value, 2);
+        $this->infPis = number_format($value,  2, ',', '');
     }
 
     /**
@@ -464,7 +464,7 @@ class Rps extends RpsSIGISS
         if (!Validator::numeric()->floatVal()->min(0)->validate($value)) {
             throw new \InvalidArgumentException($msg);
         }
-        $this->infCofins = round($value, 2);
+        $this->infCofins = number_format($value,  2, ',', '');
     }
 
     /**
@@ -484,7 +484,7 @@ class Rps extends RpsSIGISS
         if (!Validator::numeric()->floatVal()->min(0)->validate($value)) {
             throw new \InvalidArgumentException($msg);
         }
-        $this->infInss = round($value, 2);
+        $this->infInss = number_format($value,  2, ',', '');
     }
 
     /**
@@ -504,7 +504,7 @@ class Rps extends RpsSIGISS
         if (!Validator::numeric()->floatVal()->min(0)->validate($value)) {
             throw new \InvalidArgumentException($msg);
         }
-        $this->infIr = round($value, 2);
+        $this->infIr = number_format($value,  2, ',', '');
     }
 
     /**
@@ -524,7 +524,7 @@ class Rps extends RpsSIGISS
         if (!Validator::numeric()->floatVal()->min(0)->validate($value)) {
             throw new \InvalidArgumentException($msg);
         }
-        $this->infCsll = round($value, 2);
+        $this->infCsll = number_format($value,  2, ',', '');
     }
 
     /**
